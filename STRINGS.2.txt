@@ -1,0 +1,45 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+#split()
+string="I am maggi"
+print(string.split())
+['I', 'am', 'maggi']
+>>> print(string.split('a'))
+['I ', 'm m', 'ggi']
+>>> #join()
+>>> lst=['I','am','maggi']
+>>> print(".join(lst))
+...       
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print( .join(lst))
+...       
+SyntaxError: invalid syntax
+>>> print(' '.join(lst))
+...       
+I am maggi
+>>> print('_'.join(lst))
+...       
+I_am_maggi
+>>> print('@'.join(lst))
+...       
+I@am@maggi
+>>> #finf()
+...       
+>>> 
+>>> 
+>>> #find()
+...       
+>>> string='I am maggi'
+...       
+>>> print(string.find('m'))
+...       
+3
+>>> print(string.index('m'))
+...       
+3
+>>> print(string.replace('m'))
+...       
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    print(string.replace('m'))
+TypeError: replace() takes at least 2 positional arguments (1 given)

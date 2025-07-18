@@ -1,0 +1,40 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #string case conversion
+>>> string="Srinubabu"
+>>> print(string.lower())
+srinubabu
+>>> print(string.upper())
+SRINUBABU
+>>> print(string.swapcase())
+sRINUBABU
+>>> #title()
+>>> print(s2.title())
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    print(s2.title())
+NameError: name 's2' is not defined
+>>> print(string.title())
+Srinubabu
+>>> #capitalize()
+>>> print(string.capitalize())
+Srinubabu
+>>> #Remove white spaces
+>>> s=' abc '
+>>> print(s)
+ abc 
+>>> print(s.strip())
+abc
+>>> print(s.lstrip())
+abc 
+>>> print(s.rstrip())
+ abc
+>>> s='@@@abcd@ef@@@
+SyntaxError: unterminated string literal (detected at line 1)
+>>> s='@@@@abcd@efg@@@'
+>>> 
+>>> print(s.string('@'))
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    print(s.string('@'))
+AttributeError: 'str' object has no attribute 'string'. Did you mean: 'strip'?

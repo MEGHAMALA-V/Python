@@ -1,0 +1,39 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #indexing
+>>> s="a b c d e"
+>>> print(s[0])
+a
+>>> print(s[1])
+ 
+>>> print(s[-1])
+e
+>>> #slicing
+>>> s='abcde'
+>>> print(s[1:4])
+bcd
+>>> print(s[2:3])
+c
+>>> #string reversal using slicing
+>>> print(s[::-1])
+edcba
+>>> #string concatination by using"+"
+>>> s1="code"
+>>> s2="Gnan"
+>>> print(s1+" "+s2)
+code Gnan
+>>> #Repetation of string using '*'
+>>> string="srinubabu"
+>>> print(string*3)
+srinubabusrinubabusrinubabu
+>>> string="*"
+>>> print(string*1)
+*
+>>> print(string*2)
+**
+>>> print(string*3)
+***
+>>> print(string*4)
+****
+>>> print(string*5)
+*****

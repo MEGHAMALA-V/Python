@@ -1,0 +1,28 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #checking functions
+>>> s1='abcd'
+>>> s2='abc123'
+>>> s3='12345'
+>>> s4='abc@123'
+>>> print(s1.isalpha(),s1.isalnum(),s1.isdigit())
+True True False
+>>> print(s4.isalnum())
+False
+>>> #string comparision
+>>> s1='maggi'
+>>> s2='maggie'
+>>> print(s1>s2)
+False
+>>> print(s1<s2)
+True
+>>> s="maggi"
+>>> 
+>>> print(s.upper().replace('m','@'))
+MAGGI
+>>> l=list('meghana')
+>>> print)(l)
+SyntaxError: unmatched ')'
+>>> print(l)
+['m', 'e', 'g', 'h', 'a', 'n', 'a']
+>>> print("_".join("megha na".split())
