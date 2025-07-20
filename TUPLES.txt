@@ -1,0 +1,38 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #tuple
+>>> t=(1,2,3,'a','b','codegnan',[4,5,6],7,1,2.5)
+>>> print(t[4])
+b
+>>> print(t[-4])
+[4, 5, 6]
+>>> print(t[4:100])
+('b', 'codegnan', [4, 5, 6], 7, 1, 2.5)
+>>> #empty tuple
+>>> t1=()
+>>> t2=tuple()
+>>> #tuple with multiple values
+>>> t3=(1,2,3,"codegnan")
+>>> #tuple with single value
+>>> t4=(56)
+>>> print(type(t1),type(t2),type(t3),type(t4))
+<class 'tuple'> <class 'tuple'> <class 'tuple'> <class 'int'>
+>>> #read tuple from user
+>>> t=tuple(map(int,input().split()))
+print(t)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    t=tuple(map(int,input().split()))
+ValueError: invalid literal for int() with base 10: 'print(t)'
+>>> 10
+10
+>>> #tuple concatination using '+'
+>>> t1=(1,2,'hi')
+>>> t2=(3,4,'bye')
+>>> t3=t1+t2
+>>> print(t3)
+(1, 2, 'hi', 3, 4, 'bye')
+>>> #tuple repeat using'*'
+>>> t1=(1,2,'hi')
+>>> print(t1*3)
+(1, 2, 'hi', 1, 2, 'hi', 1, 2, 'hi')

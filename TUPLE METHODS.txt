@@ -1,0 +1,61 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+#Tuple methods
+#index#count
+t=(1,2,3,'a','b','codegnan',[1,4,5,6],7,1,2.5)
+ind=t.index(1)
+count_1=t.count(1)
+print("Index of 1ele is:',ind)
+      
+SyntaxError: unterminated string literal (detected at line 1)
+print("Index of 1ele is:",ind)
+      
+Index of 1ele is: 0
+print("count of 1ele is:",count_1)
+      
+count of 1ele is: 2
+#build in functions
+      
+#min(),max(),sum(),len()
+      
+t=(1,23,54,90,56,45)
+...       
+>>> min_val=min(t)
+...       
+>>> max_val=max(t)
+...       
+>>> sum_tuple=sum(t)
+...       
+>>> length=len(t)
+...       
+>>> print(min_val,max_val,sum_tuple,length)
+...       
+1 90 269 6
+>>> #sorted
+...       
+>>> t=(1,2,3,4,4,66)
+...       
+>>> new_t=sorted(t,reverse=false)
+...       
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    new_t=sorted(t,reverse=false)
+NameError: name 'false' is not defined. Did you mean: 'False'?
+>>> new_t=sorted(t,reverse= false)
+...       
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    new_t=sorted(t,reverse= false)
+NameError: name 'false' is not defined. Did you mean: 'False'?
+>>> new_t=sorted(t,reverse= False)
+...       
+>>> print(new_t)
+...       
+[1, 2, 3, 4, 4, 66]
+>>> t=(88,96,45,22)
+...       
+>>> new_t=sorted(t,reverse= False)
+...       
+>>> print(new_t)
+...       
+[22, 45, 88, 96]
