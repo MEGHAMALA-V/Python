@@ -1,0 +1,39 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #index based access
+>>> lst=[1,2,'hi','a','b',23.5,1,2]
+>>> print(lst[0])
+1
+>>> lst[1]=1000
+>>> print(lst)
+[1, 1000, 'hi', 'a', 'b', 23.5, 1, 2]
+>>> #creating empty list
+>>> lst=[]
+>>> lst1=list()
+>>> print(type(lst))
+<class 'list'>
+>>> print(type(lst1))
+<class 'list'>
+>>> #string to list type conversion
+>>> s=
+SyntaxError: invalid syntax
+>>> s='srinu babu'
+>>> l=list(s)#string to list type costing
+>>> print(type(s),type(l))
+<class 'str'> <class 'list'>
+>>> print(l)
+['s', 'r', 'i', 'n', 'u', ' ', 'b', 'a', 'b', 'u']
+>>> #Reading list of integers from user
+>>> lst=list(map(int,input().split()))
+print(lst)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    lst=list(map(int,input().split()))
+ValueError: invalid literal for int() with base 10: 'print(lst)'
+>>> 12345
+12345
+>>> #Reading list of string values from user
+>>> lst=list(map(str,input().split()))
+print(list)
+>>> 1 2 3 a b c
+SyntaxError: invalid syntax

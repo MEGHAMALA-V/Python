@@ -1,0 +1,37 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #list concatination
+>>> l1=[1,2,3,4,5]
+>>> l2=[6,7,8,9,0]
+>>> print(l1+l2)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+>>> #list repitation usinng'*'
+>>> l1=[1,2,3]
+>>> print(l1*4)
+[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> ###LIST METHODS##
+>>> #append()
+>>> l=[1,2,3,5.5,'a','b',1,2,3]
+>>> l.append(100)
+>>> print("after append operation:",l)
+after append operation: [1, 2, 3, 5.5, 'a', 'b', 1, 2, 3, 100]
+>>> #extend()
+>>> l.extend([200,300])
+>>> print("after extend operation:",l)
+after extend operation: [1, 2, 3, 5.5, 'a', 'b', 1, 2, 3, 100, 200, 300]
+>>> #insert()
+>>> l.insert(4,'codegnan')
+>>> print("after insert operation:",l)
+after insert operation: [1, 2, 3, 5.5, 'codegnan', 'a', 'b', 1, 2, 3, 100, 200, 300]
+>>> #index()
+>>> ind=l.index(30)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    ind=l.index(30)
+ValueError: 30 is not in list
+>>> ind=l.index(2)
+>>> print("2 value index:",ind)
+2 value index: 1
+>>> ind=l.index(5.5)
+>>> print("5.5 value index:",ind)
+5.5 value index: 3

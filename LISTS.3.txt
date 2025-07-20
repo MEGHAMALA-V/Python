@@ -1,0 +1,42 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #count()
+>>> l=[1,2,3,10,29,43,200,23,2,3,2]
+>>> count_2=l.count(2)
+>>> print("total 2 element count:",count_2)
+total 2 element count: 3
+>>> #len()
+>>> l=[2,3,4,5,6]
+>>> length=len(l)
+>>> print(length)
+5
+>>> #min(),max(),sum()
+>>> l=[1,2,3,4,5]
+>>> min_val=min(l)
+>>> max_val=max(l)
+>>> sum_list=sum(l)
+>>> print("min value in the list:',min_value)
+...       
+SyntaxError: unterminated string literal (detected at line 1)
+>>> print("min value in the list:",min_value)
+...       
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    print("min value in the list:",min_value)
+NameError: name 'min_value' is not defined. Did you mean: 'min_val'?
+>>> print("min value in the list:",min_val)
+...       
+min value in the list: 1
+>>> print("max value in the list:",max_val)
+...       
+max value in the list: 5
+>>> print("sum of list:",sum_list)
+...       
+sum of list: 15
+>>> #reverse()
+...       
+>>> l=[0,9,8,7]
+...       
+>>> print("reverse of list:",l)
+...       
+reverse of list: [0, 9, 8, 7]

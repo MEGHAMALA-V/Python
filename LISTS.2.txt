@@ -1,0 +1,40 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #remove()
+>>> l=[1,2,4,5.5]
+>>> print("original list:",l)
+original list: [1, 2, 4, 5.5]
+>>> l.remove(5.5)
+>>> print("after remove operation:",l)
+after remove operation: [1, 2, 4]
+>>> #pop()
+>>> l.pop()
+4
+>>> print("after pop operation:",l)
+after pop operation: [1, 2]
+>>> l.pop(4)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    l.pop(4)
+IndexError: pop index out of range
+>>> l.pop(2)
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    l.pop(2)
+IndexError: pop index out of range
+>>> #clear()
+>>> l=[1,3,6,9.0]
+>>> l.clear()
+>>> print("After clear operation:",l)
+After clear operation: []
+>>> #del()
+>>> l.del()
+SyntaxError: invalid syntax
+>>> del[0]
+SyntaxError: cannot delete literal
+>>> del[2]
+SyntaxError: cannot delete literal
+>>> l=[2.2,3,4,5]
+>>> del l[3]
+>>> print("after del operation:",l)
+after del operation: [2.2, 3, 4]
