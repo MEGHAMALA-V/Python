@@ -1,0 +1,25 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> #DICTIONARY
+>>> d={1:'a','A':2,6:4,(1,2):4,5:[1,2,(3,4),5]}
+>>> #emoty dictionary
+>>> d={}
+>>> d1=dict()
+>>> #dictionary with values
+>>> d3={1:'a','A':2,6:4,(1,2):4,5:[1,2,(3,4),5]}
+>>> #dictionary values access by using keys
+>>> d={1:'a','A':2,6:4,(1,2):4,5:[1,2,(3,4),5]}
+>>> print[d[1])
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+>>> print(d[1])
+a
+>>> print(d['a'])
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    print(d['a'])
+KeyError: 'a'
+>>> print(d['A'])
+2
+>>> print(d[5])
+[1, 2, (3, 4), 5]
+
