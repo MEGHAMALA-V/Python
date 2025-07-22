@@ -1,0 +1,49 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+#set methods
+s={1,2,3,4}
+print("original set:",s)
+original set: {1, 2, 3, 4}
+s.add(100)
+print("after add operation:",s)
+after add operation: {1, 2, 3, 100, 4}
+>>> s.update([1,20,30])
+>>> print("after update operation:",s)
+after update operation: {1, 2, 3, 100, 4, 20, 30}
+>>> s.remove(2)
+>>> print("after remove 2ele:",s)
+after remove 2ele: {1, 3, 100, 4, 20, 30}
+>>> s.discard(20)
+>>> print("after discard 20ele:",s)
+after discard 20ele: {1, 3, 100, 4, 30}
+>>> val=s.pop()
+>>> print("after pop operation:"val,s)
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print("after pop operation:",val,s)
+after pop operation: 1 {3, 100, 4, 30}
+>>> s.clear()
+>>> print("after clear operation:",s)
+after clear operation: set()
+>>> 
+>>> ##union()#intersection()#difference()#symmetric_difference()
+>>> s1={1,2,3,4}
+>>> s2={3,4,5,6}
+>>> union=s1.union(s2)
+>>> intersection=s1.intersection(s2)
+>>> difference=s1.difference(s2)
+>>> symmetric_difference=s1.symmetric_difference(s2)
+>>> print(union,intersection,difference,symmetric_difference)
+{1, 2, 3, 4, 5, 6} {3, 4} {1, 2} {1, 2, 5, 6}
+>>> ##is subset(),is superset(),is disjoint()
+>>> s1={1,2,3,4,5,6}
+>>> s2={4,6}
+>>> print(s1.is subset(s2))
+SyntaxError: invalid syntax
+>>> print(s1.issubset(s2))
+False
+>>> print(s2.issubset(s1))
+True
+>>> print(s1.issuperset(s2))
+True
+>>> print(s1.isdisjoint(s2))
+False

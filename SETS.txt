@@ -1,0 +1,51 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> ##SETS##
+>>> #creating empty set
+>>> s1={}
+>>> s2=set()
+>>> print(type(s1),type(s2))
+<class 'dict'> <class 'set'>
+>>> #sets not allow unhashable data values
+>>> s={1,2,30.'codegnan','A','4.5',[1,2,3]}
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> s={1,2,30,'codegnan','A','4.5',[1,2,3]}
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    s={1,2,30,'codegnan','A','4.5',[1,2,3]}
+TypeError: unhashable type: 'list'
+>>> #not index based
+>>> s={1,2,30,'codegnan','A','4.5'}
+>>> print(s[0])
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    print(s[0])
+TypeError: 'set' object is not subscriptable
+>>> #set allow unique value
+>>> s={1,2,3,4,5,2,3}
+>>> print(s)
+{1, 2, 3, 4, 5}
+>>> #read set of integers from user
+>>> s=set(map(int,input().split()))
+print(s)
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    s=set(map(int,input().split()))
+ValueError: invalid literal for int() with base 10: 'print(s)'
+>>> s=set(map(int, input().split()))
+print(s)
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    s=set(map(int, input().split()))
+ValueError: invalid literal for int() with base 10: 'print(s)'
+>>> 1,2,3,4,5
+(1, 2, 3, 4, 5)
+#read set of strings from user
+s=set(map(str,input().split()))
+print(s)
+1212abab
+SyntaxError: invalid decimal literal
+1 2 1 2 a b
+SyntaxError: invalid syntax
+12 12 a b
+SyntaxError: invalid syntax
