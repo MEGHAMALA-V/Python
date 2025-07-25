@@ -1,0 +1,9 @@
+angle1 = float(input("Enter first angle (in degrees): "))
+angle2 = float(input("Enter second angle (in degrees): "))
+angle3 = float(input("Enter third angle (in degrees): "))
+
+# Check validity
+if angle1 + angle2 + angle3 == 180:
+    print("() The triangle is valid.")
+else:
+    print("() The triangle is NOT valid.")

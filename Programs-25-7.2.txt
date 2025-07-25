@@ -1,0 +1,20 @@
+def assign_grade(marks):
+    if marks >= 90:
+        return "A+"
+    elif marks >= 80:
+        return "A"
+    elif marks >= 70:
+        return "B"
+    elif marks >= 60:
+        return "C"
+    elif marks >= 50:
+        return "D"
+    else:
+        return "F"
+
+# Example usage
+scores = [95, 82, 74, 67, 52, 40]
+grades = [assign_grade(mark) for mark in scores]
+
+for mark, grade in zip(scores, grades):
+    print(f"Marks: {mark} --> Grade: {grade}")

@@ -1,0 +1,9 @@
+def is_divisible_by_3_and_5(number):
+    if number % 3 == 0 and number % 5 == 0:
+        return f"{number} is divisible by both 3 and 5."
+    else:
+        return f"{number} is NOT divisible by both 3 and 5."
+
+# Example usage
+num = int(input("Enter a number: "))
+print(is_divisible_by_3_and_5(num))

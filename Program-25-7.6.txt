@@ -1,0 +1,8 @@
+def is_three_digit(number):
+    if 100 <= abs(number) <= 999:
+        return f"{number} is a three-digit number."
+    else:
+        return f"{number} is NOT a three-digit number."
+# Example usage
+num = int(input("Enter a number: "))
+print(is_three_digit(num))
