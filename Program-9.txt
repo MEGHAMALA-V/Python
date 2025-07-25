@@ -1,0 +1,13 @@
+char = input("Enter a character: ")
+# Check if it's a single character
+if len(char) != 1:
+    print("() Please enter just one character.")
+else:
+    if char.isupper():
+        print("() It's an uppercase letter.")
+    elif char.islower():
+        print("() It's a lowercase letter.")
+    elif char.isdigit():
+        print("() It's a digit.")
+    else:
+        print("() It's a special symbol.")

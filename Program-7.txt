@@ -1,0 +1,9 @@
+char = input("Enter a character: ").lower()
+# Check if it's a single alphabet character
+if len(char) == l and char.isalpha():
+    if char in 'aeiou':
+        print(f"() '{char}' is a vowel.")
+    else:
+        print(f"() '{char}' is a consonant.")
+else:
+    print(f"() Please enter a single alphabet character only.")
