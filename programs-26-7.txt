@@ -1,0 +1,43 @@
+# Python code to find the sum of an array
+# Sample array
+array = [5, 10, 15, 20, 25]
+# Calculate the sum
+total = sum(array)
+# Print the result
+print("Sum of the array:", total)
+
+#python code to find largest element in an array
+# Sample array
+array = [25, 67, 12, 89, 43]
+# Find the largest element
+largest = max(array)
+# Print the result
+print("The largest element in the array is:", largest)
+
+# Function to rotate array to the left by d positions
+def rotate_array(arr, d):
+    n = len(arr)
+    d = d % n  # handle cases where d > n
+    rotated = arr[d:] + arr[:d]
+    return rotated
+# Example usage
+array = [1, 2, 3, 4, 5, 6]
+positions = 2  # Number of positions to rotate
+rotated_array = rotate_array(array, positions)
+print("Original array:", array)
+print(f"Array after rotating left by {positions} positions:", rotated_array)
+
+# Function to split the array and add the first part to the end
+def split_and_rearrange(arr, split_index):
+    # Ensure the index is within range
+    if split_index < 0 or split_index > len(arr):
+        return "Invalid split index!"
+    # Rearranging the array
+    rearranged = arr[split_index:] + arr[:split_index]
+    return rearranged
+# Example usage
+array = [1, 2, 3, 4, 5, 6]
+split_index = 2
+result = split_and_rearrange(array, split_index)
+print("Original array:", array)
+print(f"Array after splitting at index {split_index} and moving first part to the end:", result)
